@@ -9,6 +9,26 @@
 <body>
   <h1>Tarjetas de Presentación</h1>
   <p class="sub">Creá tus tarjetas usando <code>new Tarjeta(...)</code></p>
+
+  <!-- Formulario para ingresar datos de la tarjeta -->
+  <div id="formulario-tarjeta">
+    <input type="text" id="nombre" placeholder="Nombre" required />
+    <input type="text" id="profesion" placeholder="Profesión" required />
+    <input type="text" id="contacto" placeholder="Contacto" required />
+
+    <p>Seleccioná un ícono:</p>
+    <div id="iconos-opciones">
+      <button type="button" class="icono-btn" data-icon="💻">💻</button>
+      <button type="button" class="icono-btn" data-icon="🎨">🎨</button>
+      <button type="button" class="icono-btn" data-icon="📌">📌</button>
+    </div>
+
+    <!-- Campo oculto para guardar el ícono seleccionado -->
+    <input type="hidden" id="icono" />
+
+    <button id="btn-crear">Crear Tarjeta</button>
+  </div>
+
   <div id="contenedor-tarjetas"></div>
 
   <script type="module" src="main.js"></script>
